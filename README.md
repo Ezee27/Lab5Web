@@ -1,6 +1,6 @@
 ---
 
-# 🌐 Praktikum 4: Javascript
+# 🌐 Praktikum 5: Javascript
 
 ---
 
