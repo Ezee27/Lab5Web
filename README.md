@@ -346,13 +346,91 @@ function hitung(ele) {
 
 ---
 
-## Kesimpulan
+Oke, berikut README untuk **bagian “Pertanyaan dan Tugas” serta “Laporan Praktikum”** dari **materi Lab5Web**, dibuat rapi dan sesuai format laporan GitHub — **tidak digabung dengan README sebelumnya**, jadi bisa kamu pakai langsung di repo baru `Lab5Web`.
 
-Dari praktikum ini, kita mempelajari:
+---
 
-1. Dasar penggunaan JavaScript di HTML.
-2. Pemakaian fungsi, kondisi, dan perulangan.
-3. Interaksi dengan form dan elemen HTML (DOM).
-4. Penggunaan event seperti `onclick` dan `onload`.
+# **Praktikum 5 - JavaScript**
+
+## **Pertanyaan dan Tugas**
+
+### **1. Buat script untuk melakukan validasi pada isian form**
+
+Berikut contoh implementasi validasi form menggunakan JavaScript.
+Validasi dilakukan untuk memastikan semua input telah diisi dan format email sesuai.
+
+#### **Kode Program (`form_validasi.html`):**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Validasi Form</title>
+    <script>
+        function validasiForm() {
+            var nama = document.forms["formData"]["nama"].value;
+            var email = document.forms["formData"]["email"].value;
+            var password = document.forms["formData"]["password"].value;
+
+            if (nama == "" || email == "" || password == "") {
+                alert("Semua field wajib diisi!");
+                return false;
+            }
+
+            var polaEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!polaEmail.test(email)) {
+                alert("Format email tidak valid!");
+                return false;
+            }
+
+            alert("Data berhasil dikirim!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form name="formData" onsubmit="return validasiForm()">
+        <p>Nama: <input type="text" name="nama"></p>
+        <p>Email: <input type="text" name="email"></p>
+        <p>Password: <input type="password" name="password"></p>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
+```
+
+#### **Penjelasan:**
+
+1. **Input validation:**
+   Script mengecek apakah semua input (nama, email, password) sudah diisi.
+2. **Email format check:**
+   Menggunakan pola regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/` untuk memeriksa format email.
+3. **Alert messages:**
+
+   * Jika ada field kosong → muncul alert *“Semua field wajib diisi!”*
+   * Jika format email salah → muncul alert *“Format email tidak valid!”*
+   * Jika semua benar → muncul alert *“Data berhasil dikirim!”*
+
+#### **Hasil Tampilan di Browser:**
+
+Form akan menampilkan 3 field (Nama, Email, Password) dan tombol **Kirim**.
+Saat tombol ditekan, JavaScript akan menampilkan alert sesuai kondisi input.
+
+---
+
+<img width="1916" height="337" alt="image" src="https://github.com/user-attachments/assets/e583cbe4-fa52-42df-9d17-077ff9a695da" />
+
+---
+
+### **Kesimpulan:**
+
+Melalui praktikum ini, mahasiswa dapat memahami dasar-dasar JavaScript meliputi:
+
+* Penulisan kode JavaScript di dalam HTML
+* Penggunaan fungsi `alert()`, `prompt()`, `document.write()`, `if`, `switch`, `function`
+* Validasi form input menggunakan JavaScript
+* Menampilkan hasil di browser dan console
 
 ---
