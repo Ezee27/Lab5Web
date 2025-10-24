@@ -16,8 +16,6 @@
 
 ---
 
-# Praktikum 5 – JavaScript
-
 ## Tugas
 
 <img width="510" height="110" alt="image" src="https://github.com/user-attachments/assets/de61e5b0-f686-4b98-9d59-5a6910b116cc" />
