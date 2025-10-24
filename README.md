@@ -346,9 +346,13 @@ function hitung(ele) {
 
 ---
 
-# **Praktikum 5 - JavaScript**
-
 ## **Pertanyaan dan Tugas**
+
+---
+
+<img width="590" height="220" alt="image" src="https://github.com/user-attachments/assets/3924b7f9-d202-4434-b643-265caa45629a" />
+
+---
 
 ### **1. Buat script untuk melakukan validasi pada isian form**
 
