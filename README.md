@@ -346,18 +346,11 @@ function hitung(ele) {
 
 ---
 
-Oke, berikut README untuk **bagian “Pertanyaan dan Tugas” serta “Laporan Praktikum”** dari **materi Lab5Web**, dibuat rapi dan sesuai format laporan GitHub — **tidak digabung dengan README sebelumnya**, jadi bisa kamu pakai langsung di repo baru `Lab5Web`.
-
----
-
 # **Praktikum 5 - JavaScript**
 
 ## **Pertanyaan dan Tugas**
 
 ### **1. Buat script untuk melakukan validasi pada isian form**
-
-Berikut contoh implementasi validasi form menggunakan JavaScript.
-Validasi dilakukan untuk memastikan semua input telah diisi dan format email sesuai.
 
 #### **Kode Program (`form_validasi.html`):**
 
